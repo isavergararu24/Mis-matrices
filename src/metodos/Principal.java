@@ -70,6 +70,7 @@ public class Principal extends javax.swing.JFrame {
 
         jtf1.setBackground(new java.awt.Color(204, 204, 204));
         jtf1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jtf1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jScrollPane1.setViewportView(jtf1);
 
         cb2.setBackground(new java.awt.Color(204, 204, 255));
@@ -252,6 +253,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
          jtf1.setText("");
+         cb1.setSelectedIndex(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
