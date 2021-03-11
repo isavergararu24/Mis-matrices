@@ -56,7 +56,7 @@ public class mVentas {
                 suma += ventas[i][j];
             }
         }
-        return suma;
+        return suma;//Hola isa
     }
     
     public double getPromedioM( ){
