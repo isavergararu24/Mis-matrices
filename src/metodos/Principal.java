@@ -216,43 +216,28 @@ public class Principal extends javax.swing.JFrame {
                     }
              break;
              case 3:
-                if(miData==null)
-                    JOptionPane.showMessageDialog(null, 
-                        "La matriz no tiene registrado los datos!!");
-                else{
-                    mes=Integer.parseInt(JOptionPane.showInputDialog(
-                        "Entre la posición del mes a consultar: "));
+                if (miData == null) {
+                    JOptionPane.showMessageDialog(null,
+                            "La matriz no tiene registrado los datos!!");
+                } else {
+                    pos = miData.getMejorVendorA();
+                    JOptionPane.showMessageDialog(null,
+                            "El mejor vendedor del año es: " + pos
+                            + ". Sus ventas fueron: " + miData.getVentasVendedor(pos));
                 }
-                if((mes>=0)&&(mes<miData.nm)){
-                            miData.getVentasdeUNMes(mes);
-                }
-                else{
-                    JOptionPane.showMessageDialog(null, 
-                         "Esta posición del mes es invalida!");
-                }
-            break;
+                break;
             case 4:
-                if(miData==null)
-                    JOptionPane.showMessageDialog(null, 
-                        "La matriz no tiene registrado los datos!!");
-                else{
-                    pos=miData.getMejorVendorA();
-                    JOptionPane.showMessageDialog(null, 
-                        "El mejor vendedor del año es: "+pos
-                        +". Sus ventas fueron: "+miData.getVentasVendedor(pos));
+                if (miData == null) {
+                    JOptionPane.showMessageDialog(null,
+                            "La matriz no tiene registrado los datos!!");
+                } else {
+                    pos = miData.getMejorMesV();
+                    JOptionPane.showMessageDialog(null,
+                            "El mejor mes de ventas del año es: " + pos
+                            + ". Sus ventas fueron: " + miData.getVentasMes(pos));
                 }
-            break;
-            case 5:
-                if(miData==null)
-                    JOptionPane.showMessageDialog(null, 
-                        "La matriz no tiene registrado los datos!!");
-                else{
-                    pos=miData.getMejorMesV();
-                    JOptionPane.showMessageDialog(null, 
-                        "El mejor mes de ventas del año es: "+pos
-                        +". Sus ventas fueron: "+miData.getVentasMes(pos));
-                }
-            break;
+                break;
+            
         }
     }//GEN-LAST:event_cb1ActionPerformed
 
