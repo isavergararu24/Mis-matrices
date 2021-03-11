@@ -38,8 +38,8 @@ public class Principal extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         cb1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jButton2 = new javax.swing.JButton();
+        jtf1 = new javax.swing.JTextPane();
+        cb2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -51,7 +51,7 @@ public class Principal extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(204, 204, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton1.setText(" Añadir informacion de mis ventas");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -61,22 +61,27 @@ public class Principal extends javax.swing.JFrame {
         cb1.setBackground(new java.awt.Color(204, 204, 255));
         cb1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cb1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Opciones:", "1. Mostrar Ventas de un Vendedor", "2. Mostrar Ventas de un Mes", "3. Determinar el Mejor Vendedor del Año", "4. Determinar el Mejor Mes de Ventas" }));
-        cb1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cb1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cb1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cb1ActionPerformed(evt);
             }
         });
 
-        jTextPane1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jScrollPane1.setViewportView(jTextPane1);
+        jtf1.setBackground(new java.awt.Color(204, 204, 204));
+        jtf1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jScrollPane1.setViewportView(jtf1);
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 255));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton2.setText("Mostrar datos de Ventas");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cb2.setBackground(new java.awt.Color(204, 204, 255));
+        cb2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cb2.setText("Mostrar datos de Ventas");
+        cb2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cb2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb2ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Datos de Mis Ventas");
@@ -85,13 +90,13 @@ public class Principal extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("Limpiar");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jButton4.setBackground(new java.awt.Color(204, 204, 255));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("Cerrar");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -104,7 +109,7 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cb2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -133,7 +138,7 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cb2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -200,8 +205,55 @@ public class Principal extends javax.swing.JFrame {
                         }
                     }
              break;
+             case 3:
+                if(miData==null)
+                    JOptionPane.showMessageDialog(null, 
+                        "La matriz no tiene registrado los datos!!");
+                else{
+                    mes=Integer.parseInt(JOptionPane.showInputDialog(
+                        "Entre la posición del mes a consultar: "));
+                }
+                if((mes>=0)&&(mes<miData.nm)){
+                            miData.getVentasdeUNMes(mes);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, 
+                         "Esta posición del mes es invalida!");
+                }
+            break;
+            case 4:
+                if(miData==null)
+                    JOptionPane.showMessageDialog(null, 
+                        "La matriz no tiene registrado los datos!!");
+                else{
+                    pos=miData.getMejorVendorA();
+                    JOptionPane.showMessageDialog(null, 
+                        "El mejor vendedor del año es: "+pos
+                        +". Sus ventas fueron: "+miData.getVentasVendedor(pos));
+                }
+            break;
+            case 5:
+                if(miData==null)
+                    JOptionPane.showMessageDialog(null, 
+                        "La matriz no tiene registrado los datos!!");
+                else{
+                    pos=miData.getMejorMesV();
+                    JOptionPane.showMessageDialog(null, 
+                        "El mejor mes de ventas del año es: "+pos
+                        +". Sus ventas fueron: "+miData.getVentasMes(pos));
+                }
+            break;
         }
     }//GEN-LAST:event_cb1ActionPerformed
+
+    private void cb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb2ActionPerformed
+        if(miData==null){
+                    JOptionPane.showMessageDialog(null, 
+                    "La matriz no tiene registrado los datos!!");
+                }else{
+                    jtf1.setText(miData.getMostrarV());
+                }
+    }//GEN-LAST:event_cb2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,13 +292,13 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cb1;
+    private javax.swing.JButton cb2;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jtf1;
     // End of variables declaration//GEN-END:variables
 }
