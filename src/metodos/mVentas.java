@@ -197,5 +197,5 @@ public class mVentas {
         }
         getMostrarVec(vMes);
     }
-    //Hola isa
+    
 }
