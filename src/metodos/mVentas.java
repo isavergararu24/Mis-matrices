@@ -33,7 +33,7 @@ public class mVentas {
         }
     }
     
-    public void getMostrarV( ){
+    public String getMostrarV( ){
         int i, j;
         String info="La matriz de ventas es: \n";
         for(i=0; i<nv; i++){
@@ -42,7 +42,7 @@ public class mVentas {
             }
             info+="\n";
         }
-        JOptionPane.showMessageDialog(null, info);
+        return info;
     }
     
     public double getSumaM( ){
