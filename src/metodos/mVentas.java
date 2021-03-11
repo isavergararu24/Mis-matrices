@@ -28,7 +28,10 @@ public class mVentas {
         int i, j;
         for(i=0; i<nv; i++){
             for(j=0; j<nm; j++){
-                ventas[i][j]=Double.parseDouble(JOptionPane.showInputDialog(ventas));
+                ventas[i][j]=Double.parseDouble(
+                      JOptionPane.showInputDialog(
+                     "Entre el valor de venta del vendedor "+i
+                     +" en el mes "+j+":"));
             }
         }
     }
