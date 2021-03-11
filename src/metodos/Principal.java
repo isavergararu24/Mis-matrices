@@ -150,8 +150,6 @@ public class Principal extends javax.swing.JFrame {
         
         switch(cb1.getSelectedIndex()){
             case 0:  
-               miData= new mVentas();
-               miData.setLlenar();
             break;
             case 1:
                  if(miData==null)
